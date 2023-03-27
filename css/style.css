@@ -1,0 +1,549 @@
+/* Typography */
+@font-face {
+  font-family: "Tw Cen Mt Bold";
+  src: url("../fonts/TwCenMTStdBold.otf");
+}
+
+@font-face {
+  font-family: "Tw Cen Mt Regular";
+  src: url("../fonts/TwCenMT.otf");
+}
+
+h1 {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 40px;
+  color: #B6001E;
+}
+
+h2 {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Tw Cen Mt Regular", Arial;
+  font-size: 25px;
+}
+
+p {
+  font-family: Arial;
+  font-size: 17.5px;
+}
+
+h4 {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 33.3px;
+}
+
+button {
+  display: block;
+  align-items: center;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0000FF;
+
+  border: 3px solid #0000FF;
+  border-radius: 38.5px;
+  background-color: transparent;
+  padding-left: 55px;
+  padding-right: 55px;
+  height: 65px;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background-color: #0000FF;
+  cursor: pointer;
+}
+
+.navButton {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 25px;
+}
+
+.navButton:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+.scroll-to-top img {
+  width: 40px;
+  height: 40px;
+}
+
+.scroll-to-top.show {
+  display: block;
+}
+
+/* Header */
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 15px;
+}
+
+
+.logo {
+  width: 37.42%;
+  max-width: 600px;
+  height: auto;
+  padding: 40px 0px;
+  padding-left: 35px;
+}
+
+header ul {
+  float: right;
+  color: #0000ff;
+  padding-top: 36px;
+  padding-bottom: 25px;
+  transform: translate(0.1%, 0);
+}
+
+header li {
+  display: inline-block;
+  padding-right: 20px;
+  padding: 0px 35px;
+}
+
+header p {
+  display: inline-block;
+}
+
+ul.nav.nav-pills.nav-justified {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 13px 50px;
+}
+
+.nav-link {
+  color: #0000FF;
+  padding: 15px;
+}
+
+.nav-link.active {
+  background-color: #0000FF !important;
+  border-radius: 38.5px;
+  padding: 15px;
+}
+
+/* OVERVIEW Section */
+.overView {
+  display: flex;
+}
+
+.content {
+  padding: 30px 50px;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "content1 content2"
+    "content3 content4";
+  align-content: start;
+}
+
+.content1 {
+  grid-area: content1;
+}
+
+.content2 {
+  grid-area: content2;
+}
+
+.content3 {
+  grid-area: content3;
+}
+
+.content4 {
+  grid-area: content4;
+}
+
+.content1,
+.content2,
+.content3,
+.content4 {
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.content5 {
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.productMockup {
+  align-items: center;
+  width: 28%;
+  height: auto;
+  padding: 30px 50px;
+  background-color: #FFFFFF;
+  object-fit: contain;
+}
+
+
+/* MY UX SKILLSET Section */
+.mySkillset {
+  padding: 0px 50px;
+  padding-top: 0;
+  background-color: #FFFFFF;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexContainer div {
+  width: 33%;
+  padding-right: 20px;
+}
+
+/* TOOLS I KNOW Section */
+.toolsUsed {
+  padding: 22px 50px;
+  background-color: #FFFFFF;
+  white-space: nowrap;
+  max-width: 2000px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tools div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12.5px;
+  text-align: center;
+}
+
+.tools img {
+  max-width: 200px;
+  min-width: 100px;
+  height: auto;
+}
+
+.software-label {
+  text-align: center;
+  transform: translate(0, 10%);
+}
+
+/* WHAT I DID Section */
+.whatIDid {
+  padding: 30px 50px;
+}
+
+.whatIDid .container {
+  display: flex;
+  justify-content: center;
+}
+
+.whatIDid .col-sm img {
+  max-width: 400px;
+  min-width: 200px;
+  padding: 30px 30px;
+  height: auto;
+}
+
+
+/* THE PROCESS Section */
+.theProcess {
+  padding: 30px 50px;
+}
+
+.theProcess .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.theProcess .jumbotron img {
+  max-width: 1500px;
+  min-width: 1000px;
+  transform: translate(0, -13.8%);
+}
+
+
+/* USER RESEARCH Section */
+.userResearch {
+  padding: 30px 50px;
+}
+
+.userResearch .container {
+  display: flex;
+  justify-content: center;
+}
+
+.userResearch .col-sm img {
+  max-width: 400px;
+  min-width: 200px;
+  padding: 30px 30px;
+  height: auto;
+}
+
+/* IDEATION DESIGN Section */
+.ideationDesign {
+  padding: 30px 50px;
+}
+
+.ideationDesign .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ideationDesign .jumbotron img {
+  max-width: 95%;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0px;
+}
+
+
+/* INTERACTIVE PROTOTYPE Section */
+.interactivePrototype {
+  padding: 30px 50px;
+}
+
+.interactivePrototype .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.interactivePrototype .jumbotron img {
+  max-width: 1500px;
+  min-width: 1000px;
+  padding: 30px 0px;
+}
+
+/* USABILITY TESTING Section */
+.usabilityTesting {
+  padding: 30px 50px;
+}
+
+.usabilityTesting .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.usabilityTesting .jumbotron img {
+  max-width: 75%;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0px;
+}
+
+/* INSIGHTS & OUTCOME Section */
+.insightsOutcome {
+  padding: 30px 50px;
+}
+
+.insightsOutcome .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.insightsOutcome .jumbotron img {
+  max-width: 55%;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0px;
+}
+
+
+/* GET IN TOUCH Section */
+.flex-container {
+  position: relative;
+  padding: 0px 50px;
+  padding-top: 20px;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  height: calc(103.2%);
+  border-left: 1px solid;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.onlinePresence {
+  position: absolute;
+  top: 8%;
+  left: 74%;
+}
+
+.linkedInhyperlink p {
+  color: #0000FF;
+  text-decoration: underline;
+  padding-top: 20px;
+}
+
+.linkedInhyperlink:hover {
+  cursor: pointer;
+}
+
+/* Contact Form */
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  padding: 30px 0px;
+}
+
+.contactSubmit {
+  display: flex;
+  justify-content: center;
+  width: 65.5%;
+  padding-top: 25px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "name name"
+    "firstname lastname"
+    "email email"
+    "subject subject"
+    "message message";
+  grid-gap: 16px;
+  grid-row-gap: 0px;
+  width: 900px;
+}
+
+.field.first-name {
+  grid-area: firstname;
+}
+
+.field.last-name {
+  grid-area: lastname;
+}
+
+.form-item.field.email.required {
+  grid-area: email;
+}
+
+.form-item.field.text.required {
+  grid-area: subject;
+}
+
+.form-item.field.textarea.required {
+  grid-area: message;
+}
+
+.field label {
+  margin-bottom: 8px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+}
+
+.form-item input {
+  height: 40px;
+  padding: 10px;
+}
+
+.form-item textarea {
+  height: 70px;
+  resize: none;
+  padding: 10px;
+}
+
+.form-item input,
+.form-item textarea {
+  background-color: #FAFAFA;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.form-item.field.first-name>label,
+.form-item.field.last-name>label {
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+}
+
+.caption-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.field-control {
+  height: 36px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 4px;
+}
+
+textarea.field-element {
+  height: 160px;
+  resize: vertical;
+}
+
+/* Footer */
+
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 50px;
+}
