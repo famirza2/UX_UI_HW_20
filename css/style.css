@@ -27,7 +27,7 @@ h3 {
 
 p {
   font-family: Arial;
-  font-size: 17.5px;
+  font-size: 18px;
 }
 
 h4 {
@@ -63,7 +63,7 @@ button:hover {
 }
 
 .navButton:hover {
-  color: #000000;
+  color: #00B589 !important;
   cursor: pointer;
 }
 
@@ -129,13 +129,30 @@ ul.nav.nav-pills.nav-justified {
   padding: 13px 50px;
 }
 
+.homePage {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 25px;
+  color: #0000ff;
+}
+
+.homePage:hover {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 25px;
+  color: #00B589;
+}
+
 .nav-link {
   color: #0000FF;
   padding: 15px;
 }
 
+.nav-link:hover {
+  color: #00B589;
+}
+
+
 .nav-link.active {
-  background-color: #0000FF !important;
+  background-color: #00B589 !important;
   border-radius: 38.5px;
   padding: 15px;
 }
@@ -215,8 +232,8 @@ ul.nav.nav-pills.nav-justified {
   padding-right: 20px;
 }
 
-/* TOOLS I KNOW Section */
-.toolsUsed {
+/* TECH USED Section */
+.techUsed {
   padding: 22px 50px;
   background-color: #FFFFFF;
   white-space: nowrap;
@@ -234,13 +251,14 @@ ul.nav.nav-pills.nav-justified {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 12.5px;
+  margin: 0px 50px;
+  margin-top: 20px;
   text-align: center;
 }
 
 .tools img {
-  max-width: 200px;
-  min-width: 100px;
+  max-width: 90px;
+  min-width: 70px;
   height: auto;
 }
 
@@ -260,12 +278,12 @@ ul.nav.nav-pills.nav-justified {
 }
 
 .whatIDid .col-sm img {
-  max-width: 400px;
-  min-width: 200px;
+  max-width: 300px;
+  min-width: 100px;
   padding: 30px 30px;
+  padding-bottom: 45px;
   height: auto;
 }
-
 
 /* THE PROCESS Section */
 .theProcess {
@@ -296,9 +314,10 @@ ul.nav.nav-pills.nav-justified {
 }
 
 .userResearch .col-sm img {
-  max-width: 400px;
-  min-width: 200px;
+  max-width: 300px;
+  min-width: 100px;
   padding: 30px 30px;
+  padding-bottom: 45px;
   height: auto;
 }
 
@@ -385,7 +404,7 @@ ul.nav.nav-pills.nav-justified {
 .vertical-line {
   position: absolute;
   top: 50%;
-  left: 72%;
+  left: 75%;
   transform: translate(-50%, -50%);
   height: calc(103.2%);
   border-left: 1px solid;
@@ -395,18 +414,15 @@ ul.nav.nav-pills.nav-justified {
 
 .onlinePresence {
   position: absolute;
-  top: 8%;
-  left: 74%;
+  top: 4%;
+  left: 80%;
 }
 
-.linkedInhyperlink p {
-  color: #0000FF;
-  text-decoration: underline;
-  padding-top: 20px;
-}
-
-.linkedInhyperlink:hover {
-  cursor: pointer;
+.linkedInimage img {
+  max-width: 175px;
+  min-width: 155px;
+  height: auto;
+  padding-top: 30px;
 }
 
 /* Contact Form */
@@ -422,7 +438,7 @@ ul.nav.nav-pills.nav-justified {
 
 .contactSubmit {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   width: 65.5%;
   padding-top: 25px;
 }
@@ -438,7 +454,7 @@ ul.nav.nav-pills.nav-justified {
     "message message";
   grid-gap: 16px;
   grid-row-gap: 0px;
-  width: 900px;
+  width: 950px;
 }
 
 .field.first-name {
@@ -543,7 +559,7 @@ textarea.field-element {
 footer p {
   display: flex;
   justify-content: flex-end;
-  margin-top: 15px;
-  margin-bottom: 15px;
   margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

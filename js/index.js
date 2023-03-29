@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var offset = 1290;
+  var offset = 1000;
   var duration = 300;
   var fadeOutDuration = 400;
   var fadeInDuration = 200;
@@ -11,8 +11,8 @@ $(document).ready(function() {
     html: controlHTML,
     css: {
       position: 'fixed',
-      bottom: '60px',
-      right: '10px',
+      bottom: '50px',
+      right: '1px',
       cursor: 'pointer',
       display: 'none'
     },
